@@ -7,7 +7,7 @@ public class Car {
     private int doors;
     private int persons;
 
-    public Car(String carType, String engineType, int DOORs, int persons) {
+    public Car(String carType, String engineType, int doors, int persons) {
         this.carType = carType;
         this.engineType = engineType;
         this.doors = doors;
