@@ -10,7 +10,7 @@ public class CarMain {
         System.out.println(car.getCarType());
 
         System.out.println("Number of doors: " + car.getDoors());
-        car.SetDoors(6);
+        car.setDoors(6);
         System.out.println("Number of doors: " + car.getDoors());
 
     }
