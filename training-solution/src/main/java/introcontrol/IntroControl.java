@@ -29,9 +29,10 @@ public class IntroControl {
         return sale;
     }
 
-    //Átgondolni!!!
     public int calculateConsumption(int prev, int next) {
-        return next - prev;
+        if (next > prev) {
+            return next -prev;
+        } else return 9999 - prev + next;
     }
 
     public void printNumbers(int max){
