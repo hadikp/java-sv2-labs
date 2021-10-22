@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class Employee {
     private String name;
     private LocalDate dateOfBirth;
-    private LocalDateTime beginEmployment = LocalDateTime.of(2021, 10, 17, 12, 33);
+    private LocalDateTime beginEmployment = LocalDateTime.now();
 
     public Employee(String name, int year, int month, int day) {
         this.name = name;
