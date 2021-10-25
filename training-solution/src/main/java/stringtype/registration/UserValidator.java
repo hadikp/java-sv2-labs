@@ -24,4 +24,15 @@ public class UserValidator {
             return false;
         }
     }
+
+    public boolean isValidEmail(String email) {
+        boolean kukac = email.contains("@");
+        boolean point = email.contains(".");
+        boolean place = email.indexOf(".") - email.indexOf("@") > 1;
+        boolean begin = !email.substring(0,1).equals("ß");
+        boolean end = !email.substring(email.length()-1).equals(".");
+        if (kukac && point && place && begin && end) {
+            return true;
+        } else return false;
+    }
 }
