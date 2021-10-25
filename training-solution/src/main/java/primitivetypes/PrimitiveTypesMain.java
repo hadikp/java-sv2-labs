@@ -22,5 +22,24 @@ public class PrimitiveTypesMain {
         System.out.println(i);
         int j = Integer.parseInt("2");
         System.out.println(j);
+        System.out.println();
+
+        //Logikai értékek
+        boolean k = true;
+        System.out.println(k);
+        Boolean l = true; //autoboxing
+        System.out.println(l);
+        boolean m = Boolean.valueOf(true); //autounboxing
+        System.out.println(m);
+        Boolean n = Boolean.valueOf(true); //autoboxing
+        System.out.println(n);
+        boolean o = Boolean.parseBoolean("TrUe"); //autounboxing
+        System.out.println(o);
+        Boolean p = Boolean.parseBoolean("TrUe");
+        System.out.println(p);
+        boolean q = Boolean.parseBoolean("TreU"); //autounboxing
+        System.out.println(o);
+        Boolean r = Boolean.parseBoolean("TreU");
+        System.out.println(p);
     }
 }
