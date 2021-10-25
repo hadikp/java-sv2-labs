@@ -36,7 +36,7 @@ public class Registration {
         Registration reg = new Registration();
         Person person = new Person(reg.fullName(surname, firstname), reg.dateOfBirth(yearOfBirth, monthOfBirth, dayOfBirth), email);
 
-        System.out.println(person.toString());
+        System.out.println(person);
 
     }
 }
