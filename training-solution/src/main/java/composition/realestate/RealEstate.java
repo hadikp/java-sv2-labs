@@ -37,9 +37,7 @@ public class RealEstate {
 
     @Override
     public String toString() {
-        return "Ingatlanhirdetés: " +
-                "Címe: " + title +
-                ", Ár: " + price +
-                ", Rövid leírás: " + details;
+        return "Ingatlanhirdetés: " +" " + title +
+                ", Ára: " + price + "Ft" + " " + details;
     }
 }

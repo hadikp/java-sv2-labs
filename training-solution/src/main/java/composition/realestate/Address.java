@@ -47,10 +47,6 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Cím: " +
-                "Város:" + city +
-                ", Irányítószám: " + zipCode +
-                ", Utca: " + street +
-                ", Házszám: " + houseNumber;
+        return "CÍM: " + " " + city + " " + zipCode + " " + street + " " + houseNumber +".";
     }
 }

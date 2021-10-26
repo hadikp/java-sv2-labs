@@ -47,10 +47,8 @@ public class Details {
 
     @Override
     public String toString() {
-        return "Részletek:" +
-                "Leírás: " + description +
-                ", Négyzetméter: " + squareMeter +
-                ", Telek mérete: " + areaOfSite +
-                ", Cím: " + address;
+        return "Részletek:" + " " + description +
+                ", Négyzetméter: " + squareMeter + " m2" +
+                ", Telek mérete: " + areaOfSite  + " m2 " + address;
     }
 }
