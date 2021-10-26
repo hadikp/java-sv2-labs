@@ -5,23 +5,25 @@ public class Person {
     private String identificationCard;
     private Address address;
 
-    public Person(String name, String identificationCard) {
+    public Person(String name, String identificationCard, Address address)  {
         this.name = name;
         this.identificationCard = identificationCard;
+        this.address = address;
     }
-    //Address adr = new Address()
-    public String moveTo(Address address) {
-        //return address.correctData("Magyarország", "Veszprém", "Búzavirág ut 5.", "8200");
-        return "11";
+
+    public void moveTo(Address address) {
+         this.address = address;
     }
 
     public Address getAddress(Address address) {
         return address;
     }
 
-    public void correctData(String name, String identificationCard) {
+    public void correctData(String name, String identificationCard, Address address) {
         this.name = name;
         this.identificationCard = identificationCard;
+        this.address = address;
+
     }
 
     public String getName() {
@@ -34,9 +36,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", identificationCard='" + identificationCard + '\'' +
-                '}';
+        return "Person: " +
+                "name: " + name +
+                ", identificationCard: " + identificationCard +
+                "Address: " + address;
+
     }
 }
