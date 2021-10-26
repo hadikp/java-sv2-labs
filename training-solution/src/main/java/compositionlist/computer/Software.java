@@ -27,9 +27,7 @@ public class Software {
 
     @Override
     public String toString() {
-        return "Software{" +
-                "name='" + name + '\'' +
-                ", numberOfVersion=" + numberOfVersion +
-                '}';
+        return  "név: " + name +
+                ", verziószám: " + numberOfVersion;
     }
 }

@@ -27,9 +27,7 @@ public class Hardware {
 
     @Override
     public String toString() {
-        return "Hardware{" +
-                "name='" + name + '\'' +
-                ", model='" + model + '\'' +
-                '}';
+        return "név: " + name +
+                ", model: " + model;
     }
 }

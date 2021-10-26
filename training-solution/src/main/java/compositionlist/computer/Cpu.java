@@ -2,7 +2,7 @@ package compositionlist.computer;
 
 public class Cpu {
     private String model;
-    private double clockSignal;
+    private double clockSignal; //GHz
 
     public Cpu(String model, double clockSignal) {
         this.model = model;
@@ -27,9 +27,7 @@ public class Cpu {
 
     @Override
     public String toString() {
-        return "Cpu{" +
-                "model='" + model + '\'' +
-                ", clockSignal=" + clockSignal +
-                '}';
+        return "model: " + model +
+                ", clockSignal: " + clockSignal + " GHz";
     }
 }
