@@ -17,7 +17,7 @@ public class IntroControl {
     public String greetingToJoe(String name) {
         if (name.equals("Joe")) {
             return "Hello Joe";
-        }else return " ";
+        }else return "";
     }
 
     public int calculateBonus(int sale) {
@@ -26,7 +26,7 @@ public class IntroControl {
             return sale / 10;
         }
         System.out.print("Az eladás nem éri el az 1 millió forintot csak ");
-        return sale;
+        return 0;
     }
 
     public int calculateConsumption(int prev, int next) {
