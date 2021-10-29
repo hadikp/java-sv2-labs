@@ -14,5 +14,8 @@ public class RandomDraw {
         int num2 = rnd.nextInt(5) + 6;
         System.out.println("A lista elemének indexe: " + num2);
         System.out.println("A nyertesek: " + men.get(num1) + " és " + men.get(num2));
+
+        System.out.println(rnd.nextInt(5, 10)); //5 és 10 közötti véletlenszám
+
     }
 }
