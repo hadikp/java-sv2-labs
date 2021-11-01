@@ -18,4 +18,17 @@ public class GentlemanTest {
         //Then
         assertThat(welcome, equalTo("Hello Péter"));
     }
+
+    @Test
+    public void testSayHelloNull() {
+        //Given
+        Gentleman gentleman = new Gentleman();
+        String name = null;
+
+        //When
+        String welcome = gentleman.sayHello(name);
+
+        //Then
+        assertThat(welcome, equalTo("Hello Anonimus"));
+    }
 }
