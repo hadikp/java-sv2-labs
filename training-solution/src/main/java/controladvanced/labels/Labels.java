@@ -13,6 +13,8 @@ public class Labels {
                 table[i][j] = (i + 1) + (j + 1);
             }
         }
+
+        //Teszthez kell, tömb kiíratás
         for (int i = 0; i < 4; i++) {
             System.out.println();
             for (int j = 0; j < 4; j++) {
