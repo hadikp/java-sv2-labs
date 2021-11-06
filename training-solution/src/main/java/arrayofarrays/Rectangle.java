@@ -1,5 +1,7 @@
 package arrayofarrays;
 
+import java.util.Arrays;
+
 public class Rectangle {
     public void rectangularMatrix(int size) {
         int[][] rect = new int[size][size];
@@ -19,6 +21,7 @@ public class Rectangle {
             }
             System.out.println();
         }
+        System.out.println(Arrays.deepToString(rect));
     }
 
     public static void main(String[] args) {
