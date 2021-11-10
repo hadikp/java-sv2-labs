@@ -29,6 +29,6 @@ public class Person {
         Person person = new Person(null, 32);
 
         System.out.println(person);
-        System.out.println(person.getName().toUpperCase());
+        System.out.println(person.getName().toUpperCase()); //ToUpperCase, nullán van meghívva
     }
 }
