@@ -7,11 +7,11 @@ public class Patient {
 
     public Patient(String name, String TAJNumber, int yearOfBirth) {
         if (name.length() == 0) {
-            throw new IllegalArgumentException("A név nem lehet üres!");
+                throw new IllegalArgumentException("A név nem lehet üres!");
         }
 
-        if (yearOfBirth <= 1900) {
-            throw new IllegalArgumentException("Nem születhettél korábban mint 1900");
+            if (yearOfBirth <= 1900) {
+                throw new IllegalArgumentException("Nem születhettél korábban mint 1900");
         }
 
 
