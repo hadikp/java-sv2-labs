@@ -12,7 +12,6 @@ public class Books {
         List<String> booksList =  new ArrayList<>();
         try {
            booksList = Files.readAllLines(path);
-
         }
         catch (IOException ioe) {
             ioe.printStackTrace();
