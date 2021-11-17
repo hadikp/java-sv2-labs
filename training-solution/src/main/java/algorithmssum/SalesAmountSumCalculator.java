@@ -32,6 +32,5 @@ public class SalesAmountSumCalculator {
         System.out.println("A cég összes értékesítőjének árbevétele: " + salesSum.sumAmount());
 
 
-
     }
 }
