@@ -32,7 +32,5 @@ class ClassFiveATest {
     void testStringNumber () {
         assertEquals("Albert", cfa.getTodayReferringStudent("five"));
         assertEquals("Péter", cfa.getTodayReferringStudent("one"));
-
     }
-
 }
