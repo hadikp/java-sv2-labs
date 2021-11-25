@@ -13,22 +13,34 @@ public class ChessTournament {
     }
 
     public void addPlayersToTeams(List<Player> playersRegistrated) {
-        int count = 0;
-        for (int i = 0; i < playersRegistrated.size()-1; i += 2) {
-                Player player1 = playersRegistrated.get(i);
-                teams.get(count).setPlayerOne(player1);
-                Player player2 = playersRegistrated.get(i+1);
-                teams.get(count).setPlayerTwo(player2);
-            count++;
+        int teamsSize = (playersRegistrated.size() + 1) / 2;
+        System.out.println(teamsSize);
+        System.out.println(playersRegistrated.size());
+        int i;
+        for (i = 0; i <= teamsSize-1; i++) {
+                Player player1 = playersRegistrated.get(2*i);
+                teams.get(i).setPlayerOne(player1);
+
+                if (playersRegistrated.size() != 1 || playersRegistrated.size() != 3 || playersRegistrated.size() !=5 ) { //
+                    try {
+                        Player player2 = playersRegistrated.get(2*i+1);
+                        teams.get(i).setPlayerTwo(player2);
+                    }
+                    catch (IllegalArgumentException iae) {
+                        iae.printStackTrace();
+                    }
+
+                } else {
+                    System.out.println("Ide már nem jutott játékos");
+                }
 
         }
     }
 
     public void getTeams() {
-        for (int i = 1; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             System.out.println( teams.get(i).getPlayerOne().getName());
             System.out.println( teams.get(i).getPlayerTwo().getName());
-
         }
     }
 

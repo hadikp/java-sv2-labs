@@ -35,7 +35,7 @@ class ChessTournamentTest {
     @Test
     void testAddPlayersToTeam () {
         ChessTournament chessTour = new ChessTournament();
-        chessTour.addPlayersToTeams(Arrays.asList(peter, jozsi, janos, erika, kati, bali));
+        chessTour.addPlayersToTeams(Arrays.asList(peter, jozsi, janos));
 
         chessTour.getTeams();
 
