@@ -13,10 +13,10 @@ class OrderStateTest {
         Deletable deletablePrep = OrderState.PREPARED;
         Deletable deletable = OrderState.DELETED;
 
-        assertEquals(true, deletableNew.canDelete());
-        assertEquals(true, deletableConf.canDelete());
-        assertEquals(true, deletablePrep.canDelete());
-        assertEquals(false, deletable.canDelete());
+        assertTrue(deletableNew.canDelete());
+        assertTrue(deletableConf.canDelete());
+        assertTrue(deletablePrep.canDelete());
+        assertFalse(deletable.canDelete());
     }
 
 }
