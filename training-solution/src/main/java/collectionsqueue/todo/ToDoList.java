@@ -13,7 +13,7 @@ public class ToDoList {
     public Deque<ToDo> getTodosInUrgencyOrder() {
         Deque<ToDo> result = new ArrayDeque<>();
         for (ToDo td: todos) {
-            if (td.isUrgent() == true) {
+            if (td.isUrgent()) {
                 result.push(td);
             } else {
                 result.addLast(td);
@@ -32,6 +32,8 @@ public class ToDoList {
         List<ToDo> todos = Arrays.asList(reggeli, tizorai, ebed, uzsonna, vacsora, kod);
         ToDoList toDoList = new ToDoList(todos);
         System.out.println(toDoList.getTodosInUrgencyOrder());
+        System.out.println(toDoList.getTodosInUrgencyOrder().pop());
+        System.out.println(toDoList.getTodosInUrgencyOrder().pop());
         System.out.println(toDoList.getTodosInUrgencyOrder().pop());
     }
 }
