@@ -9,6 +9,11 @@ public class LostProperty implements Comparable<LostProperty>  {
     private String description;
     private LocalDate date;
 
+    public LostProperty(String description, LocalDate date) {
+        this.description = description;
+        this.date = date;
+    }
+
     public LostProperty(String registrationNumber, String description, LocalDate date) {
         this.registrationNumber = registrationNumber;
         this.description = description;
@@ -39,9 +44,6 @@ public class LostProperty implements Comparable<LostProperty>  {
 
     @Override
     public String toString() {
-        return "{" +
-                "regNum=" + registrationNumber + ", description=" + description +
-                ", date=" + date +
-                '}';
+        return registrationNumber + " description=" + description + " " + date;
     }
 }

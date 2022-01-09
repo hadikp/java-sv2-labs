@@ -4,19 +4,22 @@ import java.util.*;
 
 public class LostAndFoundOffice {
 
-    private Set<LostProperty> lostProperties = new TreeSet<>();
+    private List<LostProperty> lostProperties = new ArrayList<>();
 
-    public LostAndFoundOffice(Set<LostProperty> lostProperties) {
+    public LostAndFoundOffice(List<LostProperty> lostProperties) {
         this.lostProperties = lostProperties;
     }
 
-    public void findLostProperty(String description) {
-        //int index = Collections.binarySearch(lostProperties, description);
-       // return lostProperties.;
-
+    public LostProperty findLostProperty(LostProperty description) {
+        //Collections.sort(lostProperties);
+        int index = Collections.binarySearch(lostProperties, description);
+        if (index < 0) {
+            throw new IllegalArgumentException("Nincs ilyen elveszett tárgy!");
+        }
+        return lostProperties.get(index);
     }
 
-    public Set<LostProperty> getLostProperties() {
+    public List<LostProperty> getLostProperties() {
         return lostProperties;
     }
 }
