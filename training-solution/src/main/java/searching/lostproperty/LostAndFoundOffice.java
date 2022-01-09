@@ -20,6 +20,6 @@ public class LostAndFoundOffice {
     }
 
     public List<LostProperty> getLostProperties() {
-        return lostProperties;
+        return new ArrayList<>(lostProperties);
     }
 }
