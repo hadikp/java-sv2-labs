@@ -25,6 +25,6 @@ public class CarDealer {
     }
 
     public List<Car> getSaledCars() {
-        return saledCars;
+        return new ArrayList<>(saledCars);
     }
 }
