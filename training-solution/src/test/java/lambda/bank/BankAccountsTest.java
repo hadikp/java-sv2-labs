@@ -31,7 +31,7 @@ class BankAccountsTest {
     @Test
     void testOrderingByBankAccount() {
         assertEquals(peter, bankAccounts.orderingByBankAccount().get(0));
-        assertEquals(janos, bankAccounts.orderingByBankAccount().get(2));
+        assertEquals(janos, bankAccounts.orderingByBankAccount().get(3));
     }
 
     @Test

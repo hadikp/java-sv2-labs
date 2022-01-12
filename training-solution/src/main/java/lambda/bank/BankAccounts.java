@@ -28,8 +28,7 @@ public class BankAccounts {
 
     public List<BankAccount> orderingByNameAndBankAccount() {
         List<BankAccount> result = new ArrayList<>(bankAccounts);
-        //result.sort(Comparator.nullsFirst(Comparator.comparing(BankAccount::getNameOfOwner).thenComparing(BankAccount::getAccountNumber)));
-        result.sort(Comparator.nullsFirst(Comparator.comparing(BankAccount::getAccountNumber).thenComparing(BankAccount::getBalance)));
+        result.sort((Comparator.comparing(BankAccount::getNameOfOwner, Comparator.nullsFirst(Comparator.naturalOrder())).thenComparing(BankAccount::getAccountNumber)));
         return result;
     }
 }
