@@ -1,4 +1,4 @@
-package lambda.bank;
+package lambdaintro.bank;
 
 public class BankAccount {
 

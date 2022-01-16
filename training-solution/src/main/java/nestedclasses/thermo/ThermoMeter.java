@@ -6,18 +6,18 @@ public class ThermoMeter {
     private int temperature;
     private ThermometerObserver thermometerObserver;
 
-    public ThermoMeter(String room, int temperature, ThermometerObserver thermometerObserver) {
+    public ThermoMeter(String room, int temperature) {
         this.room = room;
         this.temperature = temperature;
-        this.thermometerObserver = null;
     }
 
     public void onTemperatureChanged() {
-        System.out.println();
+        thermometerObserver.handleTemperatureChange(temperature, room);
     }
 
-    public void setThermometerObserver(ThermometerObserver observer) {
-        System.out.println();
+    public void setThermometerObserver(ThermometerObserver thermometerObserver) { //A figyelő bejegyzi magát mint figyelő
+        this.thermometerObserver = thermometerObserver;
+        onTemperatureChanged();
     }
 
     public String getRoom() {
@@ -34,5 +34,6 @@ public class ThermoMeter {
 
     public void setTemperature(int temperature) {
         this.temperature = temperature;
+        onTemperatureChanged();
     }
 }

@@ -1,4 +1,4 @@
-package lambda.bank;
+package lambdaintro.bank;
 
 import java.util.ArrayList;
 import java.util.Collections;
