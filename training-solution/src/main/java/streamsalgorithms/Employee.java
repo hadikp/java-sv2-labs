@@ -18,4 +18,8 @@ public class Employee {
         return yearOfBirth;
     }
 
+    @Override
+    public String toString() {
+        return name + ": " + yearOfBirth;
+    }
 }
