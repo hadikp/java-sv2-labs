@@ -40,15 +40,15 @@ public class Main {
         //5.Add vissza a legkorábban született alkalmazott születési évét!
         int minYearOfBirth = employees.stream()
                 .mapToInt(Employee::getYearOfBirth)
-                .min()
-                .orElseThrow(() -> new IllegalArgumentException("Empty stream"));
+                .min()//optional visszatérési érték
+                .orElseThrow(() -> new IllegalArgumentException("Empty stream")); //orElseThrow() az Optionalból integert csinál
         System.out.println(minYearOfBirth);
 
         //6.Add vissza a legkorábban született alkalmazott nevét! (Itt szükség lesz a findFirst() záróműveletre.)
         String nameMinYearOfBirth = employees.stream()
                 .sorted(Comparator.comparing(Employee::getYearOfBirth))
                 .map(Employee::getName) //map(employee -> employee.getName())
-                .findFirst().orElseThrow(() -> new IllegalArgumentException("Empty stream"));
+                .findFirst().orElseThrow(() -> new IllegalArgumentException("Empty stream")); //optional visszatérési érték
         System.out.println(nameMinYearOfBirth);
 
         //7.Add vissza, hogy igaz-e, hogy minden alkalmazott 1980 előtt született-e?
@@ -73,6 +73,5 @@ public class Main {
                 .map(Employee::getName)
                 .collect(Collectors.toList());
         System.out.println(nameAll);
-
     }
 }
