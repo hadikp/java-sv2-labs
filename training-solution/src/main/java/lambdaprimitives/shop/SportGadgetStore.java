@@ -17,7 +17,7 @@ public class SportGadgetStore {
     }
 
     public double getAveragePrice() {
-        return products.stream().mapToInt(Product::getPrice).summaryStatistics().getAverage();
+        return products.stream().mapToDouble(Product::getPrice).summaryStatistics().getAverage();
     }
 
     public String  getExpensiveProductStatistics(double minPrice) {
