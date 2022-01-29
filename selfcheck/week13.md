@@ -30,11 +30,11 @@ mindenképpen végezze el ezeket a leckéket is.
 * [x] Comparator módosítások gyakorlati feladat
 * [x] [Streamek videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982034-streamek)
 * [x] Streamek gyakorlati feladat
-* [ ] [Közbenső műveletek videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982041-kozbenso-muveletek)
-* [ ] Közbenső műveletek gyakorlati feladat
-* [ ] [Primitívek használata streamekben videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982044-primitivek-hasznalata-streamekben)
-* [ ] Primitívek használata streamekben gyakorlati feladat
-* [ ] [Collectorok videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982047-collectorok)
+* [x] [Közbenső műveletek videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982041-kozbenso-muveletek)
+* [x] Közbenső műveletek gyakorlati feladat
+* [x] [Primitívek használata streamekben videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982044-primitivek-hasznalata-streamekben)
+* [x] Primitívek használata streamekben gyakorlati feladat
+* [x] [Collectorok videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/16982047-collectorok)
 * [ ] Collectorok gyakorlati feladat
 
 ## Konzultációk
@@ -43,7 +43,7 @@ mindenképpen végezze el ezeket a leckéket is.
 * [x] 2022-01-17 konzultáció gyakorlati feladat
 * [x] 2022-01-18 konzultáció részvétel/videó
 * [x] 2022-01-18 konzultáció gyakorlati feladat
-* [ ] 2022-01-20 konzultáció részvétel/videó
-* [ ] 2022-01-20 konzultáció gyakorlati feladat
-* [ ] 2022-01-21 konzultáció részvétel/videó
-* [ ] 2022-01-21 konzultáció gyakorlati feladat
+* [x] 2022-01-20 konzultáció részvétel/videó
+* [x] 2022-01-20 konzultáció gyakorlati feladat
+* [x] 2022-01-21 konzultáció részvétel/videó
+* [x] 2022-01-21 konzultáció gyakorlati feladat
